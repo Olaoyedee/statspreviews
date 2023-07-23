@@ -1,0 +1,463 @@
+/* -----------------Base----------------------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------------------- */
+/* 
+## Colors
+
+### Primary
+
+- Very dark blue (main background): hsl(233, 47%, 7%)
+- Dark desaturated blue (card background): hsl(244, 38%, 16%)
+- Soft violet (accent): hsl(277, 64%, 61%)
+
+### Neutral
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+*/
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(233, 47%, 7%);
+  display: grid;
+  place-items: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.card-base {
+  height: 60vh;
+  width: 80vw;
+  background-color: hsl(244, 38%, 16%);
+  /* border: 1px solid red; */
+}
+.card-flex {
+  height: 60vh;
+  width: 80vw;
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.card-margin {
+  margin: 5%;
+}
+.stat-head {
+  width: 78%;
+  font-size: 1.5em;
+  margin: 1%;
+  color: hsl(0, 0%, 100%);
+}
+.stat-head h1 {
+  font-family: "Inter", sans-serif;
+}
+.stat-paragragh {
+  margin: 1%;
+  width: 60%;
+  line-height: 25px;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.stat-review-flex {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1%;
+  color: hsl(0, 0%, 100%);
+}
+.head-span {
+  color: hsl(277, 64%, 61%);
+}
+.stat1 p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.stat2 p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.stat3 p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.card-image {
+  background-image: url("./images/image-header-desktop.jpg");
+  background-size: cover;
+  height: 60vh;
+  width: 40vw;
+}
+
+@media (max-width: 768px) {
+  main {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    font-family: "Lexend Deca", sans-serif;
+    margin: 2px;
+  }
+  .card-base {
+    height: 80%;
+    width: 100%;
+    background-color: hsl(244, 38%, 16%);
+
+    margin: 0;
+  }
+  .card-flex {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  .card-margin {
+    display: grid;
+    place-items: center;
+  }
+  .stat-head {
+    margin: 0;
+    width: 60%;
+    font-size: medium;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    display: grid;
+    place-items: center;
+  }
+  .stat-paragragh {
+    font-size: medium;
+    width: 95%;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+  .card-image {
+    /* border: 1px solid green; */
+    background-size: cover;
+    height: 80%;
+    width: 80%;
+    margin-bottom: 5%;
+  }
+  .stat-review-flex {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+
+    text-align: center;
+    margin: none;
+    color: hsl(0, 0%, 100%);
+  }
+  .card-statement {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 575px) {
+  main {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    font-family: "Lexend Deca", sans-serif;
+    margin: 2px;
+  }
+  .card-base {
+    height: 80%;
+    width: 100%;
+    background-color: hsl(244, 38%, 16%);
+
+    margin: 0;
+  }
+  .card-flex {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  .card-margin {
+    display: grid;
+    place-items: center;
+  }
+  .stat-head {
+    margin: 0;
+    width: 60%;
+    font-size: medium;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    display: grid;
+    place-items: center;
+  }
+  .stat-paragragh {
+    font-size: medium;
+    width: 95%;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+  .card-image {
+    /* border: 1px solid green; */
+    background-size: cover;
+    height: 80%;
+    width: 95%;
+    margin-bottom: 5%;
+  }
+  .stat-review-flex {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    font-size: x-small;
+
+    text-align: center;
+    margin: none;
+    color: hsl(0, 0%, 100%);
+  }
+  .card-statement {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 575px) {
+  main {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    font-family: "Lexend Deca", sans-serif;
+    margin: 2px;
+  }
+  .card-base {
+    height: 80%;
+    width: 100%;
+    background-color: hsl(244, 38%, 16%);
+
+    margin: 0;
+  }
+  .card-flex {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  .card-margin {
+    display: grid;
+    place-items: center;
+  }
+  .stat-head {
+    margin: 0;
+    width: 60%;
+    font-size: small;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    display: grid;
+    place-items: center;
+  }
+  .stat-paragragh {
+    font-size: x-small;
+    width: 95%;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+  .card-image {
+    /* border: 1px solid green; */
+    background-size: cover;
+    height: 80%;
+    width: 95%;
+    margin-bottom: 5%;
+  }
+  .stat-review-flex {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    font-size: x-small;
+
+    text-align: center;
+    margin: none;
+    color: hsl(0, 0%, 100%);
+  }
+  .card-statement {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    font-family: "Lexend Deca", sans-serif;
+    margin: 2px;
+  }
+  .card-base {
+    height: 80%;
+    width: 100%;
+    background-color: hsl(244, 38%, 16%);
+
+    margin: 0;
+  }
+  .card-flex {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  .card-margin {
+    display: grid;
+    place-items: center;
+  }
+  .stat-head {
+    margin: 0;
+    width: 60%;
+    font-size: small;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    display: grid;
+    place-items: center;
+  }
+  .stat-paragragh {
+    font-size: x-small;
+    width: 95%;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+  .card-image {
+    /* border: 1px solid green; */
+    background-size: cover;
+    height: 80%;
+    width: 95%;
+    margin-bottom: 5%;
+  }
+  .stat-review-flex {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    font-size: x-small;
+
+    text-align: center;
+    margin: none;
+    color: hsl(0, 0%, 100%);
+  }
+  .card-statement {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 575px) {
+  main {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    font-family: "Lexend Deca", sans-serif;
+    margin: 2px;
+  }
+  .card-base {
+    height: 80%;
+    width: 100%;
+    background-color: hsl(244, 38%, 16%);
+
+    margin: 0;
+  }
+  .card-flex {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  .card-margin {
+    display: grid;
+    place-items: center;
+  }
+  .stat-head {
+    margin: 0;
+    width: 60%;
+    font-size: small;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    display: grid;
+    place-items: center;
+  }
+  .stat-paragragh {
+    font-size: x-small;
+    width: 95%;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+  .card-image {
+    /* border: 1px solid green; */
+    background-size: cover;
+    height: 80%;
+    width: 95%;
+    margin-bottom: 5%;
+  }
+  .stat-review-flex {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    font-size: x-small;
+
+    text-align: center;
+    margin: none;
+    color: hsl(0, 0%, 100%);
+  }
+  .card-statement {
+    height: 30vh;
+  }
+}
